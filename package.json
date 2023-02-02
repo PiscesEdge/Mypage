@@ -22,8 +22,7 @@
     "popper.js": "^1.16.1"
   },
   "description": "Mypage",
-  "main": "index.js",
-  "devDependencies": {},
+  "main": "server.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PiscesEdge/Mypage.git"
