@@ -1,0 +1,55 @@
+<!--main nav-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">My Page</a>
+      <!--hamburger bar-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> <!--ms-auto for left, me-auto for right-->
+        
+        <!--to make nav bar active-->
+        <% if (title == "Home") { %>   <!--NAV BAR NOT LIGHTING UP when on page??-->
+        <li class="nav-item active">
+        <% } else { %>
+        <li class="nav-item">
+        <% } %>
+            <a class="nav-link" href="/home"><i class="fa-solid fa-lg fa-house-laptop"></i> Home </a> <!--fontawesome copied code goes as i class in here-->
+          </li>
+      
+        <% if (title == "About") {%>
+        <li class="nav-item active">
+        <%} else { %>
+        <li class="nav-item ">
+        <% } %>
+            <a class="nav-link " href="/about"><i class="fa-regular fa-address-card"></i> About </a>
+          </li>
+  
+        <% if (title == "Products") {%>
+        <li class="nav-item active">
+        <%} else { %>
+        <li class="nav-item ">
+        <% } %>
+            <a class="nav-link " href="/products"><i class="fa-brands fa-product-hunt"></i> Products </a>
+          </li>
+  
+        <% if (title == "Services") {%>
+        <li class="nav-item active">
+        <%} else { %>
+        <li class="nav-item ">
+        <% } %>
+            <a class="nav-link " href="/services"><i class="fa-solid fa-gear"></i> Services </a>
+          </li>
+  
+        <% if (title == "Contact us") {%>
+        <li class="nav-item active">
+        <%} else { %>
+        <li class="nav-item ">
+        <% } %>
+            <a class="nav-link " href="/contact"><i class="fa-regular fa-phone"></i> Contact Us </a>
+          </li>
+            </div>
+    </div>
+  </nav>
